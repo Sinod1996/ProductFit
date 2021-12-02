@@ -101,12 +101,14 @@ nav{
     margin-top: 60px;
     background-color: #1E959B;
 }
-.brends img{
-    width: 80%;
-    height: 80%;
-    display: block;
-    margin: 0 auto;
+.brends-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+
+
 
 /* section three */
 .parent{
@@ -208,6 +210,7 @@ nav{
 
 /* section six */
 .sec_six{
+    display: none;
     position: relative;
     width: 100%;
     display: flex;
@@ -302,10 +305,9 @@ nav{
 /* footer */
 .footer{
     width: 100%;
-   background: 
-   linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%),
-     linear-gradient(0deg, #C4C4C4, #C4C4C4);
-   
+   background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%),
+    linear-gradient(0deg, #C4C4C4, #C4C4C4);
+    height: 250px;
     padding-top: 85px;
 }
 .footer-logo{
@@ -346,6 +348,7 @@ nav{
         line-height: 17px;
 }
 .footer-blocks{
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -357,7 +360,7 @@ nav{
 }
 
 /* slider */
-.slider {
+.slider1 {
 	position: relative;
 	height: 100%;
 	width: 100%;
@@ -438,6 +441,24 @@ nav{
 	left:50%;
 	transform:translate(-50%,-50%);	
 }
+@media screen and (max-width:1150px) {
+    .footer{
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .footer-logo{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .brends-img{
+        margin: 15px;
+    }
+    
+}
 @media screen and (max-width:900px) {
     .header{
         justify-content: center;
@@ -467,20 +488,44 @@ nav{
     .sec_five{
         display: none;
     }
-    .footer-logo{
-        display: none;
-    }  
+}
+
+@media screen and (max-width:845px) {
+    .footer-block-info{
+        margin-top: 50px;
+    }
+    
 }
 @media screen and (max-width: 678px) {
-    .main_container .slider{
+    .main_container .slider1{
         display: block;
     }
     .parent{
         display: none;
     }
+    
+    .carousel{
+        display: block;
+    }
+    .brends-img{
+        display: none;
+    }
+    
+    
+    
 }
 @media screen and (max-width: 568px) {
     .sec-sevens .sec-seven-btn{
         padding-top: 100px;
     }
+}
+@media screen and (max-width:500px) {
+    .footer-block-ul ul{
+        display: flex;
+        align-items: baseline;
+    }
+    .footer-block-ul ul li{
+        margin: 10px;
+    }
+    
 }

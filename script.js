@@ -1,5 +1,5 @@
 const slider = (function(){
-	const slider = document.getElementById("slider"); 
+	const slider = document.getElementById("slider1"); 
 	console.log(slider);
 	const sliderContent = document.querySelector(".slider-content"); 
 	const sliderWrapper = document.querySelector(".slider-content-wrapper"); 
@@ -234,3 +234,5 @@ slider.init({
 
 
          
+
+
